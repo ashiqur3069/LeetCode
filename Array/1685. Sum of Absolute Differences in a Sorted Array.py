@@ -33,9 +33,9 @@ class Solution(object):
         return array
 
         
-            ''' The pattern is for each element: for the first element 5(index[2]) :
+            ''' The pattern is for each element: for the last element example 5 index[2] :
 
-            (index + 1) which is 3 then multiplied with the element to get (3*5) = 15 then minus pre-sum sum which is 2+3+5 = 10
+            (index + 1) which is 3 then multiplied with the element to get (3*5) = 15 then minus running sum which is 2+3+5 = 10
 
             so we get (15 - 10) = 5 then add with it the total sum - running (10 - 10) = 0 - [(len 3 - 2[index] - 1) * 5] = 0
 
