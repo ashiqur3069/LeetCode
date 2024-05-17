@@ -10,3 +10,23 @@ class Solution(object):
         result += word1[i:]
         result += word2[j:]
         return result
+
+
+###############################################
+class Solution(object):
+    def deleteMiddle(self, head):
+        fast=head
+        slow=head
+        prev=None
+        while fast and fast.next:
+            fast=fast.next.next
+            prev=slow
+            slow=slow.next
+         
+        if prev:  
+            prev.next = slow.next
+        else:  
+            head = head.next
+        return head
+        
+        
